@@ -10,11 +10,9 @@ const Addemployee = () => {
     var [email,setEmail]=useState("")
     const subData=()=>{
       const  data={"empid":empid,"empname":empname,"description":description,"salary":salary,"company":company,"dob":dob,"email":email}
-      console.log(data)
-      const subClear=()=>{
-          setName(empname=" ")}
-      }
-    }
+      console.log(data)}
+      
+    
   return (
     <div>
         <div class="container">
@@ -50,7 +48,7 @@ const Addemployee = () => {
                     <input onChange={(e)=>{setEmail(e.target.value)}} type="text" class="form-control"/>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <button onClick={subClear}  class="btn btn-info">CLEAR</button>
+                    <button   class="btn btn-info">CLEAR</button>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <button onClick={subData} class="btn btn-success">SUBMIT</button>
